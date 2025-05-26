@@ -48,3 +48,6 @@ index=main sourcetype=apache:access
 user_agent="*Nmap Script Engine*"
 | stats count by client_ip, user_agent, uri_path, status
 ```
+
+
+📌 Note: You will need to manually extract fields (like id, uri_path,client_ip etc.) in Splunk's field extractor to ensure accurate detection and table generation.
